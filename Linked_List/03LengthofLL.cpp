@@ -1,4 +1,4 @@
-// Q. delete the last node of linked list
+// Q. length of the linked list
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -22,21 +22,16 @@ public:
 
 // Leetcode type solution - function returning....
 
-Node* deleteTail(Node* head){
-    //edge cases
-    if(head == NULL || head->next == NULL){
-        delete head;
-        return NULL;
-    }
+int lengthOfLL(Node* head){
+    Node* curr = head;
+    int length = 0;
 
-    Node* curr = head; //took reference
+    //edge cases!
 
-    while(curr->next->next != NULL){
+    while (curr != NULL)
+    {
+        length++;
         curr = curr->next;
     }
-
-    delete curr->next;
-    curr->next = NULL;
-
-    return head;
+    return length;
 }

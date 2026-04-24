@@ -1,4 +1,4 @@
-//Q. Insert node at end of Dobly linked list
+//Q. Insert node at end of Doubly linked list
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -19,7 +19,7 @@ public:
 
 };
 
-//Q. Code for inserting node at last of DLL
+// Code for inserting node at last of DLL
 
 Node* insertAtEnd(Node* head, int val){
     Node* curr = head;

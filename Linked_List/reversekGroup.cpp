@@ -64,7 +64,7 @@ public:
     ListNode* reverseKGroup(ListNode* head, int k) {
         ListNode* temp = head;
         ListNode* prevNode = NULL;
-        while(temp){
+        while( temp ){
             ListNode* KthNode = getKthNode(temp, k);
             if(KthNode == NULL){
                 if(prevNode) prevNode->next = temp;

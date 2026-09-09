@@ -67,7 +67,7 @@ public:
         bool oddNode = true;
 
         while(curr != NULL){
-            if(oddNode) {
+            if(oddNode == true) {
                 odd->next = curr;
                 odd = curr;
                 oddNode = false;
